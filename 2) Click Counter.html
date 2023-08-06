@@ -1,0 +1,34 @@
+/*
+
+2) Click Counter
+
+
+Instructions:
+
+
+Create an HTML file with a button and a paragraph element to display the count.
+
+
+Use JavaScript to handle the button click event and increment the count each time the button is clicked.
+
+
+Display the updated count on the paragraph element.
+*/
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+   <script>
+    function incrementCount() {
+      var countElement = document.getElementById('count');
+      var currentCount = parseInt(countElement.textContent);
+      var newCount = currentCount + 1;
+      countElement.textContent = newCount;
+    }
+   </script>
+
+ <button onclick="incrementCount()">Click Me</button>
+  <p id="count">0</p>>
+  </body>
+</html>
